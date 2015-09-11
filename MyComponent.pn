@@ -1,0 +1,27 @@
+import React from 'react';
+
+// This is comment...
+class MyComponent extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            title: 'World'
+        };
+    }
+
+    componentDidMount() {
+        console.log('MyComponent is mounted!');
+    }
+
+    clickHandler(title) {
+        this.setState({ title });
+    }
+
+    render() {
+        let { title } = this.state;
+
+    }
+}
+
+export default MyComponent;
